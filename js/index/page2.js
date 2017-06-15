@@ -1,3 +1,3 @@
-      App.controller('page2', function (page) {
+    App.controller('page2', function (page) {
         // put stuff here
       });

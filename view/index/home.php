@@ -1,7 +1,8 @@
-﻿<div class="app-page" data-page="home">
+
+<div class="app-page" data-page="home">
 
 	<div class="app-topbar">
-		<div class="app-title">这是乐博主页</div> 
+		<div class="app-title">�ֲ���ҳ��</div> 
 	</div>
 
 	<div class="app-content">
@@ -23,8 +24,4 @@
 
 	</div>
 
-	
-
-
-	
 </div>
