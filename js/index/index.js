@@ -30,14 +30,13 @@ main.getToken = function() {
 }
 
 main.doAjax = function(params) {
-	console.log(params);
+	// console.log(params);
 	$.ajax({
-    	url:_SOLR_ADDR,
+    	url:'http://120.76.144.46:8080/solr/lebojson/select?indent=on&q=*:*&wt=json',
     	type:'GET',
-    	dataType:'json',
+    	dataType:'JSONP',
 		async:params.async?true:false,
 		data:params.data,
-		console.log(_SOLR_ADDR);
 		success:function(response) {
 			// console.log(response);
 			//返回成功

@@ -17,8 +17,8 @@
 				</span>
 			</div><!-- /input-group -->
 		</div>
-
-
+		<button class="json">获取 JSON 数据</button>
+		<div class="content"></div>
 
 
 	</div>
@@ -28,3 +28,6 @@
 
 	
 </div>
+
+<script src="js/index/home.js"></script>
+<load href="js/index/home.js" />
