@@ -1,8 +1,6 @@
 ﻿App.controller('home', function (page) {
 	var content = $(page).find('.content');
 	var data,result;
-	$(page).on('appLayout', function(){
-
 
 		$(page).find('.complex-search').bind('click',function(){
 
@@ -29,7 +27,6 @@
 			App.load('searchRes');
 		});
 
-	});
 });
 
 

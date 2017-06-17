@@ -1,4 +1,4 @@
-<div class="app-page" data-page="complex-search">
+<div class="app-page page-complex-search" data-page="complex-search">
 
     <div class="app-topbar">
         <div class="app-button left" data-back>返回</div>
