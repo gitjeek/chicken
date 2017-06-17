@@ -1,7 +1,8 @@
 ﻿App.controller('home', function (page) {
 	var content = $(page).find('.content');
-	var data;
+	var data,result;
 	$(page).on('appLayout', function(){
+
 
 		$(page).find('.complex-search').bind('click',function(){
 
@@ -19,7 +20,14 @@
 
 
 
+
+
 		 });
+
+		//跳转搜索列表页接口
+		$(page).find('.searchRes').bind('click',function(){
+			App.load('searchRes');
+		});
 
 	});
 });

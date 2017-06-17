@@ -1,18 +1,17 @@
 var main = {};
 main.clickme =function(){
 	alert("hey");
-};
+}
+
 main.doAjax = function(params) {
 	$.ajax({
-    	url:'http://120.76.144.46:8080/solr/lebojson/select?indent=on&wt=json',
+    	url:params.url,
     	type:'GET',
-    	dataType:'JSON',
-		async:params.async?true:false,
-		data:params.data,
+    	dataType:'json',
 		success:function(response) {
-			// console.log(response);
+			console.log(response);
 			//返回成功
-			if (response.docs) {
+			if (response.responseHeader) {
 				//如果有回调则执行回调
 				if (params.success) {
 					params.success(response);
@@ -40,5 +39,24 @@ main.doAjax = function(params) {
     });
 }
 
+main.avatar_error = function() {
+	var img = event.srcElement; 
+	img.src = "images/wrong.jpeg"
+}
+
+main.getTypeDesc = function(type) {
+	type = parseInt(type);
+	switch (type) {
+		case 1:
+			return '[一级]';
+		case 2:
+			return '[二级]';
+		case 3:
+			return '[三级]';
+		
+		default:
+			return '[未定级]';
+	}
+}
 
 
