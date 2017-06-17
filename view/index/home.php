@@ -9,15 +9,26 @@
 			<div class="app-button" data-target="page2">Go to Page 2</div>
 		</div> -->
 
-		<div class="col-lg-10">
+		<div >
 			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search for...">
+				<input type="text" class="form-control" placeholder="文物,地点">
 				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">Go!</button>
+					<button class="btn btn-default" type="button">搜索</button>
 				</span>
 			</div><!-- /input-group -->
 		</div>
-		<button class="json">获取 JSON 数据</button>
+		<div>
+			
+		</div>
+		<div class="col-xs-10">
+			热门:
+			<a href="">雕塑</a>
+			<a href="">瓷器</a>
+			<a href="">唐三彩</a>
+
+		</div>
+		<button class="complex-search col-xs-2">高级</button>
+		</div>
 		<div class="content"></div>
 
 

@@ -21,6 +21,7 @@ include "view/public/header.php";
 //包含各个页面的php
 include "view/index/home.php";
 include "view/index/page2.php";
+include "view/index/complex-search.php";
 ?>
 
 <script>
