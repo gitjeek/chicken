@@ -30,4 +30,3 @@
 </div>
 
 <script src="js/index/home.js"></script>
-<load href="js/index/home.js" />

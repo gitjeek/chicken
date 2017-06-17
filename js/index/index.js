@@ -32,9 +32,9 @@ main.getToken = function() {
 main.doAjax = function(params) {
 	// console.log(params);
 	$.ajax({
-    	url:'http://120.76.144.46:8080/solr/lebojson/select?indent=on&q=*:*&wt=json',
+    	url:'http://120.76.144.46:8080/solr/lebojson/select?indent=on&q=1&wt=json',
     	type:'GET',
-    	dataType:'JSONP',
+    	dataType:'json',
 		async:params.async?true:false,
 		data:params.data,
 		success:function(response) {
