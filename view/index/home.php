@@ -1,4 +1,4 @@
-﻿<div class="app-page" data-page="home">
+﻿<div class="app-page page-home" data-page="home">
 
 	<div class="app-topbar">
 		<div class="app-title">这是乐博主页</div> 
@@ -13,7 +13,7 @@
 			<div class="input-group">
 				<input type="text" class="form-control" placeholder="Search for...">
 				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">Go!</button>
+					<button class="searchRes btn btn-default" type="button">Go!</button>
 				</span>
 			</div><!-- /input-group -->
 		</div>

@@ -4,14 +4,6 @@
 	$(page).on('appLayout', function(){
 
 
-		// main.doAjax({
-	 //    	success:function(response) {
-					
-		// 			data = response;
-  // 					console.log(data);
-
-  // 			}
-  // 		});
   		// $(page).find('.json').bind('click',function(){
 		 	// $.ajax({
     //             type : 'GET',
@@ -39,17 +31,24 @@
 
 		//这段ajax是好的
 		$(page).find('.json').bind('click',function(){
+
 			$.ajax({
 				url:"http://120.76.144.46:8080/solr/lebojson/select?indent=on&q=1&wt=json", 
 				type: 'GET',
         		dataType: 'json',
 				success: function(result){
 					content.text(result.response.docs[1].name);
+
 				}
 
 			});
 				
 		 });
+
+		//跳转搜索列表页接口
+		$(page).find('.searchRes').bind('click',function(){
+			App.load('searchRes');
+		});
 
 	});
 });
